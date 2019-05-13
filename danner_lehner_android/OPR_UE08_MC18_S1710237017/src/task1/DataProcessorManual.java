@@ -1,6 +1,6 @@
 package task1;
 
-	
+
 	import java.util.Comparator;
 	import java.util.List;
 	import java.util.Vector;
@@ -32,7 +32,7 @@ import at.fhhgb.mc.opr.backblazedata.model.HardDisk;
 		// Can use Vector.sort internally, sorts the internal Vector
 		public void sort(Comparator<HardDisk> comparator) {
 			// vgl. obj1 mit obj2
-
+			hardDisks.sort(comparator);
 		}
 
 		// Returns size of the internal vector
@@ -45,11 +45,11 @@ import at.fhhgb.mc.opr.backblazedata.model.HardDisk;
 
 		// Returns a Vector of HardDisks filtered by predicate
 		public Vector<HardDisk> filter(Predicate<HardDisk> predicate) {
-			
-			
+
+
 			return hardDisks;
-		} 
-		
+		}
+
 		// Returns the HardDisk with a specified maximum value
 		public HardDisk max(Comparator<HardDisk> comparator) {
 			return null;
@@ -88,29 +88,29 @@ import at.fhhgb.mc.opr.backblazedata.model.HardDisk;
 
 		// Returns a List with elements based on the given Function
 		public List<String> reduceToStrings(BiFunction<List<String>, HardDisk, List<String>> accumulator, BinaryOperator<List<String>> combiner) {
-			
+
 			return null;
 		}
-		
-		
+
+
 		public static void main(String[] args) {
 			LiveHardDiskDataSource dataSource = new LiveHardDiskDataSource();
 			Vector<HardDisk> hardDisks = new Vector<>();
-			
+
 			System.out.println(hardDisks.capacity());
-			
+
 			// Schleife bis dataSource.next() null wird
 			// Jede HardDisk in den Vector speichern
-			
-			
-			
+
+
+
 //			while (dataSource.next() != null) {
 //				hardDisks.addElement(dataSource);
 //				//dataSource.next() = next;
 //			}
-			
+
 //			HardDisk hdd = new HardDisk(null, null, null, 0, false, null);
-//			
+//
 //			hdd.getCapacityInBytes();
 		}
 
