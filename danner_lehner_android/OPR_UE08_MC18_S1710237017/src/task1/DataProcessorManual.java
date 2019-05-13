@@ -22,6 +22,7 @@ import at.fhhgb.mc.opr.backblazedata.model.HardDisk;
 		public DataProcessorManual(Vector<HardDisk> hardDisks) { // constructor
 
 			this.hardDisks = hardDisks;
+			//actually quite useful
 		}
         
         
