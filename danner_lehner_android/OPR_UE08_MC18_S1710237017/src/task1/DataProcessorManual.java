@@ -23,6 +23,11 @@ import at.fhhgb.mc.opr.backblazedata.model.HardDisk;
 
 			this.hardDisks = hardDisks;
 		}
+        
+        
+        public void thisisaNewFancemethod(){
+            //do stuff
+        }
 
 		// Can use Vector.sort internally, sorts the internal Vector
 		public void sort(Comparator<HardDisk> comparator) {
