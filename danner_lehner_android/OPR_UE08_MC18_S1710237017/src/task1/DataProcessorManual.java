@@ -74,7 +74,7 @@ import at.fhhgb.mc.opr.backblazedata.model.HardDisk;
 
 		// Returns a median value specified by the function
 		public long median(Function<HardDisk, Long> comparator) {
-			return 0;
+			return 420L;//Blaze it
 
 		}
 
